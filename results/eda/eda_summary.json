@@ -1,0 +1,26 @@
+{
+  "train_rows": 28479,
+  "dev_rows": 20437,
+  "missing_train": 0,
+  "missing_dev": 0,
+  "duplicate_rows_train": 0,
+  "duplicate_rows_dev": 0,
+  "dev_anomaly_rate": 0.11146450066056662,
+  "dev_anomaly_segments": 4,
+  "top_separating_features": {
+    "f00": 0.971,
+    "f29": 0.87,
+    "f06": 0.849,
+    "f09": 0.701,
+    "f10": 0.671
+  },
+  "top_drift_features_ks": {
+    "f29": 0.645,
+    "f24": 0.417,
+    "f31": 0.415,
+    "f30": 0.407,
+    "f21": 0.407
+  },
+  "mean_ks_train_vs_dev_normal": 0.287310693498943,
+  "f33_dev_auc": 0.532
+}

@@ -1,0 +1,47 @@
+{
+  "threshold": 0.7190795540809631,
+  "precision": 0.9957734573119188,
+  "recall": 1.0,
+  "f1": 0.9978822532825075,
+  "roc_auc": 0.9999769450132655,
+  "pr_auc": 0.9999718206741175,
+  "confusion_matrix": [
+    [
+      1431,
+      5
+    ],
+    [
+      0,
+      1178
+    ]
+  ],
+  "reliability": {
+    "n_segments": 2,
+    "detected_segments": 2,
+    "segment_recall": 1.0,
+    "mean_detection_delay": 0.0,
+    "false_alarm_rate": 0.003481894150417827,
+    "mean_segment_len": 589.0
+  },
+  "architecture": "RNN (vanilla Elman, tanh)",
+  "input_size": 30,
+  "sequence_length": 30,
+  "hidden_size": 64,
+  "num_layers": 1,
+  "optimizer": "adam",
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "seed": 42,
+  "pos_weight": 15.149999618530273,
+  "best_epoch": 19,
+  "epochs_run": 29,
+  "hyperparameters": {
+    "hidden": 64,
+    "num_layers": 1,
+    "lr": 0.001,
+    "batch_size": 256,
+    "max_epochs": 100,
+    "patience": 10
+  },
+  "split": "sup_val (threshold also selected on sup_val)"
+}
