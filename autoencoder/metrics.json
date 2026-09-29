@@ -1,0 +1,47 @@
+{
+  "architecture": "Fully-connected autoencoder (900-128-32-128-900), unsupervised (train_fit only)",
+  "input_shape": [
+    30,
+    30
+  ],
+  "flattened_dim": 900,
+  "latent_dim": 32,
+  "optimizer": "adam",
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "seed": 42,
+  "reconstruction_loss": "mse",
+  "threshold": 0.0007576886564493179,
+  "threshold_percentile": 99,
+  "train_val_mean_error": 0.0002039363025687635,
+  "sup_val_mean_error": 0.0020109701436012983,
+  "precision": 0.887940234791889,
+  "recall": 0.7062818336162988,
+  "f1": 0.7867612293144208,
+  "roc_auc": 0.9126085948990548,
+  "pr_auc": 0.8581144573437216,
+  "confusion_matrix": [
+    [
+      1331,
+      105
+    ],
+    [
+      346,
+      832
+    ]
+  ],
+  "best_epoch": 98,
+  "epochs_run": 100,
+  "hyperparameters": {
+    "hidden": 128,
+    "latent": 32,
+    "lr": 0.001,
+    "batch_size": 256,
+    "max_epochs": 100,
+    "patience": 10
+  },
+  "training_data": "train_fit (normal only)",
+  "checkpoint_selection": "train_val reconstruction MSE (no labels)",
+  "threshold_data": "train_val reconstruction errors (no labels)",
+  "evaluation_data": "sup_val (labels used for evaluation only, after model/threshold fixed)"
+}

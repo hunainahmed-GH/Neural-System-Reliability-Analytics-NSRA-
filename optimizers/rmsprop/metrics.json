@@ -1,0 +1,39 @@
+{
+  "threshold": 0.6852023601531982,
+  "precision": 0.9830220713073005,
+  "recall": 0.9830220713073005,
+  "f1": 0.9830220713073005,
+  "roc_auc": 0.9972116794242569,
+  "pr_auc": 0.9955989672273435,
+  "confusion_matrix": [
+    [
+      1445,
+      20
+    ],
+    [
+      20,
+      1158
+    ]
+  ],
+  "reliability": {
+    "n_segments": 2,
+    "detected_segments": 2,
+    "segment_recall": 1.0,
+    "mean_detection_delay": 0.0,
+    "false_alarm_rate": 0.013651877133105802,
+    "mean_segment_len": 589.0
+  },
+  "activation": "relu",
+  "optimizer": "rmsprop",
+  "best_epoch": 99,
+  "epochs_run": 100,
+  "pos_weight": 15.176363945007324,
+  "hyperparameters": {
+    "hidden": 64,
+    "lr": 0.001,
+    "batch_size": 256,
+    "max_epochs": 100,
+    "patience": 10
+  },
+  "split": "sup_val (threshold also selected on sup_val)"
+}

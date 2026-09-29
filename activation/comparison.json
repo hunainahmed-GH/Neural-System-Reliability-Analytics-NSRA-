@@ -1,0 +1,68 @@
+[
+  {
+    "activation": "relu",
+    "precision": 0.9814,
+    "recall": 0.9839,
+    "f1": 0.9826,
+    "roc_auc": 0.9968,
+    "pr_auc": 0.9927,
+    "threshold": 0.5217,
+    "confusion_matrix": [
+      [
+        1443,
+        22
+      ],
+      [
+        19,
+        1159
+      ]
+    ],
+    "best_epoch": 94,
+    "epochs_run": 100,
+    "false_alarm_rate": 0.015
+  },
+  {
+    "activation": "leakyrelu",
+    "precision": 0.983,
+    "recall": 0.9813,
+    "f1": 0.9822,
+    "roc_auc": 0.9968,
+    "pr_auc": 0.9933,
+    "threshold": 0.7576,
+    "confusion_matrix": [
+      [
+        1445,
+        20
+      ],
+      [
+        22,
+        1156
+      ]
+    ],
+    "best_epoch": 99,
+    "epochs_run": 100,
+    "false_alarm_rate": 0.0137
+  },
+  {
+    "activation": "tanh",
+    "precision": 0.982,
+    "recall": 0.9728,
+    "f1": 0.9774,
+    "roc_auc": 0.9957,
+    "pr_auc": 0.9905,
+    "threshold": 0.5202,
+    "confusion_matrix": [
+      [
+        1444,
+        21
+      ],
+      [
+        32,
+        1146
+      ]
+    ],
+    "best_epoch": 40,
+    "epochs_run": 50,
+    "false_alarm_rate": 0.0143
+  }
+]

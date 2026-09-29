@@ -1,0 +1,98 @@
+[
+  {
+    "config": "none",
+    "weight_decay": 0.0,
+    "dropout": 0.0,
+    "precision": 0.9814,
+    "recall": 0.9839,
+    "f1": 0.9826,
+    "roc_auc": 0.9968,
+    "pr_auc": 0.9927,
+    "threshold": 0.5217,
+    "confusion_matrix": [
+      [
+        1443,
+        22
+      ],
+      [
+        19,
+        1159
+      ]
+    ],
+    "best_epoch": 94,
+    "epochs_run": 100,
+    "false_alarm_rate": 0.015
+  },
+  {
+    "config": "l2",
+    "weight_decay": 0.0001,
+    "dropout": 0.0,
+    "precision": 0.9814,
+    "recall": 0.9864,
+    "f1": 0.9839,
+    "roc_auc": 0.997,
+    "pr_auc": 0.993,
+    "threshold": 0.4391,
+    "confusion_matrix": [
+      [
+        1443,
+        22
+      ],
+      [
+        16,
+        1162
+      ]
+    ],
+    "best_epoch": 94,
+    "epochs_run": 100,
+    "false_alarm_rate": 0.015
+  },
+  {
+    "config": "dropout",
+    "weight_decay": 0.0,
+    "dropout": 0.2,
+    "precision": 0.9822,
+    "recall": 0.983,
+    "f1": 0.9826,
+    "roc_auc": 0.9973,
+    "pr_auc": 0.9961,
+    "threshold": 0.745,
+    "confusion_matrix": [
+      [
+        1444,
+        21
+      ],
+      [
+        20,
+        1158
+      ]
+    ],
+    "best_epoch": 98,
+    "epochs_run": 100,
+    "false_alarm_rate": 0.0143
+  },
+  {
+    "config": "l2_dropout",
+    "weight_decay": 0.0001,
+    "dropout": 0.2,
+    "precision": 0.9897,
+    "recall": 0.9788,
+    "f1": 0.9842,
+    "roc_auc": 0.9976,
+    "pr_auc": 0.9966,
+    "threshold": 0.7906,
+    "confusion_matrix": [
+      [
+        1453,
+        12
+      ],
+      [
+        25,
+        1153
+      ]
+    ],
+    "best_epoch": 100,
+    "epochs_run": 100,
+    "false_alarm_rate": 0.0082
+  }
+]

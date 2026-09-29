@@ -1,0 +1,117 @@
+[
+  {
+    "config": "lr_1e-4",
+    "lr": 0.0001,
+    "precision": 0.8251,
+    "recall": 0.8413,
+    "f1": 0.8331,
+    "roc_auc": 0.9083,
+    "pr_auc": 0.9021,
+    "threshold": 0.4961,
+    "confusion_matrix": [
+      [
+        1255,
+        210
+      ],
+      [
+        187,
+        991
+      ]
+    ],
+    "best_epoch": 2,
+    "epochs_run": 12,
+    "false_alarm_rate": 0.1433
+  },
+  {
+    "config": "lr_3e-4",
+    "lr": 0.0003,
+    "precision": 0.9936,
+    "recall": 0.9278,
+    "f1": 0.9596,
+    "roc_auc": 0.9894,
+    "pr_auc": 0.9879,
+    "threshold": 0.7347,
+    "confusion_matrix": [
+      [
+        1458,
+        7
+      ],
+      [
+        85,
+        1093
+      ]
+    ],
+    "best_epoch": 99,
+    "epochs_run": 100,
+    "false_alarm_rate": 0.0048
+  },
+  {
+    "config": "lr_1e-3",
+    "lr": 0.001,
+    "precision": 0.9814,
+    "recall": 0.9839,
+    "f1": 0.9826,
+    "roc_auc": 0.9968,
+    "pr_auc": 0.9927,
+    "threshold": 0.5217,
+    "confusion_matrix": [
+      [
+        1443,
+        22
+      ],
+      [
+        19,
+        1159
+      ]
+    ],
+    "best_epoch": 94,
+    "epochs_run": 100,
+    "false_alarm_rate": 0.015
+  },
+  {
+    "config": "lr_3e-3",
+    "lr": 0.003,
+    "precision": 0.9864,
+    "recall": 0.9864,
+    "f1": 0.9864,
+    "roc_auc": 0.9987,
+    "pr_auc": 0.9984,
+    "threshold": 0.8992,
+    "confusion_matrix": [
+      [
+        1449,
+        16
+      ],
+      [
+        16,
+        1162
+      ]
+    ],
+    "best_epoch": 74,
+    "epochs_run": 84,
+    "false_alarm_rate": 0.0109
+  },
+  {
+    "config": "lr_1e-2",
+    "lr": 0.01,
+    "precision": 0.9865,
+    "recall": 0.989,
+    "f1": 0.9877,
+    "roc_auc": 0.9989,
+    "pr_auc": 0.9986,
+    "threshold": 0.8024,
+    "confusion_matrix": [
+      [
+        1449,
+        16
+      ],
+      [
+        13,
+        1165
+      ]
+    ],
+    "best_epoch": 31,
+    "epochs_run": 41,
+    "false_alarm_rate": 0.0109
+  }
+]

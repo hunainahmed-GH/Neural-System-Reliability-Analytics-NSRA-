@@ -1,0 +1,122 @@
+{
+  "dataset": "SMD machine-1-1 (OmniAnomaly/ServerMachineDataset)",
+  "n_features_raw": 38,
+  "n_features": 30,
+  "feature_ids_note": "0-based column indices; names f00..f37",
+  "dropped_constant_features": [
+    "f04",
+    "f07",
+    "f16",
+    "f17",
+    "f26",
+    "f28",
+    "f36",
+    "f37"
+  ],
+  "kept_features": [
+    "f00",
+    "f01",
+    "f02",
+    "f03",
+    "f05",
+    "f06",
+    "f08",
+    "f09",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f18",
+    "f19",
+    "f20",
+    "f21",
+    "f22",
+    "f23",
+    "f24",
+    "f25",
+    "f27",
+    "f29",
+    "f30",
+    "f31",
+    "f32",
+    "f33",
+    "f34",
+    "f35"
+  ],
+  "scaling": "none",
+  "scaling_note": "source already min-max scaled to [0,1]; no refit",
+  "shuffling": false,
+  "window_size": 30,
+  "label_mode": "last",
+  "windows_cross_split_boundaries": false,
+  "splits": {
+    "train_fit": {
+      "source": "train",
+      "start": 0,
+      "end": 22783,
+      "rows": 22783,
+      "anomalies": 0,
+      "purpose": "AE training / preprocessing fitting"
+    },
+    "train_val": {
+      "source": "train",
+      "start": 22783,
+      "end": 28479,
+      "rows": 5696,
+      "anomalies": 0,
+      "purpose": "AE validation / threshold calibration"
+    },
+    "sup_train": {
+      "source": "test",
+      "start": 0,
+      "end": 17794,
+      "rows": 17794,
+      "anomalies": 1100,
+      "purpose": "supervised ANN training"
+    },
+    "sup_val": {
+      "source": "test",
+      "start": 17794,
+      "end": 20437,
+      "rows": 2643,
+      "anomalies": 1178,
+      "purpose": "supervised ANN validation"
+    },
+    "final_test": {
+      "source": "test",
+      "start": 20437,
+      "end": 28479,
+      "rows": 8042,
+      "anomalies": 416,
+      "purpose": "FINAL evaluation only"
+    }
+  },
+  "eda_findings": {
+    "train_rows": 28479,
+    "dev_rows": 20437,
+    "missing_train": 0,
+    "missing_dev": 0,
+    "duplicate_rows_train": 0,
+    "duplicate_rows_dev": 0,
+    "dev_anomaly_rate": 0.11146450066056662,
+    "dev_anomaly_segments": 4,
+    "top_separating_features": {
+      "f00": 0.971,
+      "f29": 0.87,
+      "f06": 0.849,
+      "f09": 0.701,
+      "f10": 0.671
+    },
+    "top_drift_features_ks": {
+      "f29": 0.645,
+      "f24": 0.417,
+      "f31": 0.415,
+      "f30": 0.407,
+      "f21": 0.407
+    },
+    "mean_ks_train_vs_dev_normal": 0.287310693498943,
+    "f33_dev_auc": 0.532
+  }
+}
