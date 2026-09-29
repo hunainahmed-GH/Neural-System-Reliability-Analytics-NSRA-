@@ -1,0 +1,15 @@
+﻿[theme]
+base = "dark"
+primaryColor = "#F2943C"
+backgroundColor = "#17191C"
+secondaryBackgroundColor = "#202225"
+textColor = "#ECECEC"
+font = "sans serif"
+chartCategoricalColors = ["#F2943C", "#FFC078", "#C96D1A", "#E9A15C", "#9B4F12", "#FFD3A3", "#7E4219", "#D98B43", "#B85C16", "#F6C28B"]
+chartSequentialColors = ["#3D2A1A", "#52351F", "#6A4021", "#825025", "#9C612A", "#B87530", "#D18A37", "#E39A3F", "#F2943C", "#FFC078"]
+
+[server]
+headless = true
+
+[client]
+toolbarMode = "minimal"
